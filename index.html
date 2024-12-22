@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Отсечение отрезков</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+<h1>Алгоритмы отсечения</h1>
+
+<textarea id="input" placeholder="n *число отрезков*
+X1_1 Y1_1 X2_1 Y2_1
+X1_2 Y1_2 X2_2 Y2_2
+…
+X1_n Y1_n X2_n Y2_n
+Xmin Ymin Xmax Ymax *координаты отсекающего прямоугольного окна*"></textarea>
+<button onclick="runAlgorithm()">Запустить</button>
+
+<div class="canvas-container">
+    <input type="range" id="zoom" min="1" max="10" value="1" step="0.1" orient="vertical">
+    <canvas id="canvas" width="800" height="600"></canvas>
+</div>
+<span id="zoom-value">1x</span>
+
+<script src="script.js"></script>
+</body>
+</html>
